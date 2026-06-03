@@ -402,7 +402,7 @@ export default function Home() {
   © 2026 Mochiona. Made with ❤️ for Mochi Lovers.
 
 </div>
-```
+
 
   </div>
 

@@ -321,29 +321,93 @@ export default function Home() {
 
 {/* FOOTER */}
 
-<footer className="bg-gray-900 text-white py-12 text-center px-4">
+<footer className="bg-gray-950 text-white">
 
-  <h3 className="text-3xl md:text-4xl font-black bg-gradient-to-r from-pink-400 to-orange-400 bg-clip-text text-transparent">
-    MOCHIONA
-  </h3>
+  <div className="max-w-7xl mx-auto px-6 py-14">
 
-  <p className="text-gray-400 mt-3">
-    Premium Handmade Mochi
-  </p>
+```
+<div className="grid md:grid-cols-3 gap-10">
 
-  <p className="mt-5">
-    📱 0852-1005-8856
-  </p>
+  {/* BRAND */}
+  <div>
 
-  <p>
-    📸 @mochiona_solok
-  </p>
+    <h3 className="text-4xl font-black bg-gradient-to-r from-pink-400 to-orange-400 bg-clip-text text-transparent">
+      MOCHIONA
+    </h3>
 
-  <p className="text-gray-500 mt-6 text-sm">
-    © 2026 Mochiona. All Rights Reserved.
-  </p>
+    <p className="text-gray-400 mt-4 leading-relaxed">
+      Premium Handmade Mochi dengan berbagai varian rasa favorit.
+      Dibuat fresh setiap hari menggunakan bahan berkualitas untuk
+      menghadirkan rasa yang lembut dan bikin nagih.
+    </p>
+
+  </div>
+
+  {/* MENU */}
+  <div>
+
+    <h4 className="font-bold text-lg mb-4">
+      Menu Favorit
+    </h4>
+
+    <ul className="space-y-2 text-gray-400">
+
+      <li>🍓 Strawberry</li>
+      <li>🍫 Chocolate</li>
+      <li>🍪 Chocolate Oreo</li>
+      <li>🥭 Mangga Cream</li>
+      <li>🎁 Mix Box</li>
+
+    </ul>
+
+  </div>
+
+  {/* CONTACT */}
+  <div>
+
+    <h4 className="font-bold text-lg mb-4">
+      Hubungi Kami
+    </h4>
+
+    <div className="space-y-3 text-gray-400">
+
+      <p>
+        📱 0852-1005-8856
+      </p>
+
+      <p>
+        📸 @mochiona_solok
+      </p>
+
+      <p>
+        📍 Solok, Sumatera Barat
+      </p>
+
+      <a
+        href="https://wa.me/6285210058856"
+        target="_blank"
+        className="inline-block mt-2 bg-pink-500 hover:bg-pink-600 text-white px-5 py-3 rounded-xl font-semibold transition"
+      >
+        Pesan Sekarang
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
+
+  © 2026 Mochiona. Made with ❤️ for Mochi Lovers.
+
+</div>
+```
+
+  </div>
 
 </footer>
+
 
 {/* FLOATING WA */}
 <a

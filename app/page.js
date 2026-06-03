@@ -148,10 +148,10 @@ export default function Home() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
 
           {[
-            ["6+", "Varian Rasa"],
-            ["100+", "Pelanggan"],
-            ["5K", "Harga Mulai"],
-          ["Fresh", "Everyday"],
+            ["6+","Varian Rasa"],
+            ["100+","Pelanggan"],
+            ["5K","Harga Mulai"],
+          ["Fresh","Everyday"],
 ].map((item, index) => (
 <motion.div
 key={index}

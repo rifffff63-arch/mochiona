@@ -142,23 +142,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+   {/* STATS */}
+<section className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-
-          {[
-            ["6+","Varian Rasa"],
-            ["100+","Pelanggan"],
-            ["5K","Harga Mulai"],
-          ["Fresh","Everyday"],
-].map((item, index) => (
-<motion.div
-key={index}
-whileHover={{ y: -10 }}
-className="bg-white/80 backdrop-blur-md rounded-3xl p-4 sm:p-6 text-center shadow-lg"
-
->
+    {[
+      ["6+", "Varian Rasa"],
+      ["100+", "Pelanggan"],
+      ["5K", "Harga Mulai"],
+      ["Fresh", "Everyday"],
+    ].map((item, index) => (
+      <motion.div
+        key={index}
+        whileHover={{ y: -10 }}
+        className="bg-white/80 backdrop-blur-md rounded-3xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300"
+      >
+     
+ 
 
 ```
 <h3 className="text-2xl sm:text-4xl font-black text-pink-500">

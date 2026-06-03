@@ -238,30 +238,56 @@ export default function Home() {
 </section>
 
 {/* GALERI */}
+<section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
 
-<section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-20">
+  <div className="text-center mb-12">
+    <span className="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold">
+      📸 Galeri Mochiona
+    </span>
 
-  <h2 className="text-3xl md:text-5xl font-black text-center mb-10">
-    Galeri Mochiona
-  </h2>
+    <h2 className="text-3xl md:text-5xl font-black text-gray-800 mt-4">
+      Fresh • Manis • Bikin Nagih
+    </h2>
 
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <p className="text-gray-500 mt-3 max-w-xl mx-auto">
+      Lihat berbagai varian Mochiona favorit yang dibuat fresh setiap hari.
+    </p>
+  </div>
 
-```
-{menu.map((item, index) => (
-  <img
-    key={index}
-    src={item.image}
-    alt={item.name}
-    className="rounded-2xl shadow-lg hover:scale-[1.03] transition duration-500"
-  />
-))}
-```
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+
+    {menu.map((item, index) => (
+      <div
+        key={index}
+        className="group relative overflow-hidden rounded-3xl shadow-lg"
+      >
+        <img
+          src={item.image}
+          alt={item.name}
+          className="w-full h-56 md:h-72 object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
+
+        <div className="absolute bottom-0 left-0 p-5 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500">
+          <h3 className="text-white text-xl font-bold">
+            {item.name}
+          </h3>
+
+          <p className="text-pink-300 font-semibold">
+            {item.price}
+          </p>
+        </div>
+
+        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-pink-500">
+          ⭐ Favorit
+        </div>
+      </div>
+    ))}
 
   </div>
 
 </section>
-
 {/* CTA */}
 
 <section className="px-4 sm:px-6 py-16 lg:py-20">

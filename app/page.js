@@ -6,7 +6,7 @@ const menu = [
   {
     name: "Strawberry",
     price: "Rp 5.000",
-    image: "/images/strawberry.jpg",
+    image: "/images/Strawberry.jpg",
   },
   {
     name: "Chocolate Oreo",

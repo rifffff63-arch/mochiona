@@ -142,7 +142,7 @@ export default function Home() {
         </div>
       </section>
 
-   {/* STATS */}
+{/* STATS */}
 <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
   <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
 
@@ -157,27 +157,17 @@ export default function Home() {
         whileHover={{ y: -10 }}
         className="bg-white/80 backdrop-blur-md rounded-3xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300"
       >
-     
- 
+        <h3 className="text-3xl sm:text-4xl font-black text-pink-500">
+          {item[0]}
+        </h3>
 
-```
-<h3 className="text-2xl sm:text-4xl font-black text-pink-500">
-```
+        <p className="text-sm sm:text-base text-gray-500 mt-2">
+          {item[1]}
+        </p>
+      </motion.div>
+    ))}
 
-```
-  {item[0]}
-</h3>
-
-<p className="text-sm sm:text-base text-gray-500">
-  {item[1]}
-</p>
-```
-
-</motion.div>
-))}
-
-</div>
-
+  </div>
 </section>
 
 {/* MENU */}

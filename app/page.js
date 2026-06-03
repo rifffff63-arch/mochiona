@@ -347,7 +347,9 @@ export default function Home() {
 
 {/* FLOATING WA */}
 <a
-  href="https://wa.me/6285210058856"
+  href={`https://wa.me/6285210058856?text=${encodeURIComponent(
+    "Halo Mochiona, saya ingin memesan Mochi. Mohon info menu dan stok yang tersedia."
+  )}`}
   target="_blank"
   rel="noopener noreferrer"
   className="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-3 rounded-full flex items-center gap-2 shadow-2xl hover:scale-105 transition z-50"

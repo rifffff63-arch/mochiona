@@ -54,7 +54,7 @@ export default function Home() {
           </h1>
 
           <a
-            href="https://wa.me/6285210058856"
+            href="https://wa.me/6285210058856?text=Halo%20Mochiona,%20saya%20ingin%20memesan%20Mochiona.%20Mohon%20info%20menu%20dan%20stok%20yang%20tersedia."
             target="_blank"
             className="bg-pink-500 hover:bg-pink-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105"
           >

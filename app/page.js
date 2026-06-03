@@ -350,11 +350,13 @@ export default function Home() {
   href="https://wa.me/6285210058856"
   target="_blank"
   rel="noopener noreferrer"
-  className="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-2xl hover:scale-110 animate-pulse transition z-50"
+  className="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-3 rounded-full flex items-center gap-2 shadow-2xl hover:scale-105 transition z-50"
 >
-  <FaWhatsapp />
+  <FaWhatsapp className="text-2xl" />
+  <span className="font-semibold text-sm">
+    Pesan Sekarang
+  </span>
 </a>
-
 </main>
 );
 }

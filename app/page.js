@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 
 const menu = [
   {
@@ -53,14 +54,16 @@ export default function Home() {
             MOCHIONA
           </h1>
 
-          <a
-            href="https://wa.me/6285210058856?text=Halo%20Mochiona,%20saya%20ingin%20memesan%20Mochiona.%20Mohon%20info%20menu%20dan%20stok%20yang%20tersedia."
-            target="_blank"
-            className="bg-pink-500 hover:bg-pink-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105"
-          >
-            Order Now
-          </a>
-
+         <a
+  href={`https://wa.me/6285210058856?text=${encodeURIComponent(
+    "Halo Mochiona, saya ingin memesan Mochi. Mohon info menu dan stok yang tersedia."
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-pink-500 hover:bg-pink-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105"
+>
+  🍓 Order Now
+</a>
         </div>
       </nav>
 
@@ -344,13 +347,13 @@ export default function Home() {
 
 {/* FLOATING WA */}
 <a
-href="https://wa.me/6285210058856"
-target="_blank"
-className="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-2xl hover:scale-110 transition z-50"
-
+  href="https://wa.me/6285210058856"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-2xl hover:scale-110 animate-pulse transition z-50"
 >
-
-💬 </a>
+  <FaWhatsapp />
+</a>
 
 </main>
 );

@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const menu = [
   {
-    name: "Strawberry",
+    name: "Strawberry Chocolate Oreo",
     price: "Rp 5.000",
     image: "/images/Strawberry.jpg",
   },
@@ -15,7 +15,7 @@ const menu = [
     image: "/images/oreo.jpg",
   },
   {
-    name: "Chocolate",
+    name: "Pandan Chocolate",
     price: "Rp 5.000",
     image: "/images/chocolate.jpg",
   },
